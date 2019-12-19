@@ -19,8 +19,8 @@ import (
 // 5. iter and count the word
 func main() {
     fmt.Println("type the dir")
-    var path string = "/Users/suzl/dev/Golang/horsego/src/File"
-    // fmt.Scan(&path)
+    var path string
+    fmt.Scan(&path)
     file, err := os.OpenFile(path, os.O_RDONLY, os.ModeDir)
     if err != nil {
         fmt.Println("Error happen during open file")
