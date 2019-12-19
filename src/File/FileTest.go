@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-    // copy file 
-    file, err := os.Open("./structandfile/test.xxx")
+    // copy file
+    file, err := os.Open("./File/test.txt")
     if err != nil {
         fmt.Println("open error", err)
         return
