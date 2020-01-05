@@ -29,7 +29,8 @@ func Test_RwLockGlobal(t *testing.T) {
 
 func readGoG(idx int) {
     for {
-        rwMutexG.RLock() // 这样写 得到解锁
+        // 这样写 得到解锁
+        rwMutexG.RLock()
         // 🔐 的粒度问题 readLock
         num := globalVar
         fmt.Printf("----%d read %d\n", idx, num)
