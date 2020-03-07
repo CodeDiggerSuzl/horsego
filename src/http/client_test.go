@@ -19,8 +19,7 @@ func Test_Client(t *testing.T) {
             fmt.Println("Body.Read err:", err)
             break
         }
-        if n != 0 {
-            result += result
-        }
+        result += string(buf[:n])
     }
+    fmt.Println(result)
 }

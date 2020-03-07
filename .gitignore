@@ -3,3 +3,4 @@
 /bin
 /pkg
 go.mod
+/src/github.com
