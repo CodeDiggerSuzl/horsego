@@ -4,3 +4,4 @@
 /pkg
 go.mod
 /src/github.com
+go.sum
