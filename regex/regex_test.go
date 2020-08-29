@@ -46,7 +46,8 @@ func Test_ParseHTML(t *testing.T) {
    </noframes>
 </frameset>
 </html>
-   ` // 反引号``
+   `
+    // 反引号``
     // (?s) 是正则表达式的模式修饰符。即Singleline(单行模式)。表示更改.的含义。使它与每一个字符匹配（包括换行 符\n）。
     // (.*?) 是一个单元分组。“.”匹配任意字符。“*?”表重复>=0次匹配
     ret := regexp.MustCompile(`<div>(?s:(.*?))</div>`)
